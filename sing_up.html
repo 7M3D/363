@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> sign up </title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+    <header style=" align-content: center;">
+        <div style="width: 25%; float: left;">
+            <img src="HW1_images/gisarrowdribble.webp" alt="logo" width="30%">
+        </div>
+        <div style="float: right; ">
+            <table>
+                <tr>
+                    <th colspan="2"> <img src="HW1_images/login.png" alt="login" width="50px"></th>
+                </tr>
+                <tr>
+                    <td> <a href="sign_in.html"> sign in</a> </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <ul style="text-align: center; padding: 15px;">
+                <li style="display: inline-block;list-style-type: disc; margin: 10px;">MAPS
+                </li>
+                <li style="display: inline-block;list-style-type: disc; margin: 10px;">RESOURCES</li>
+                <li style="display: inline-block;list-style-type: disc; margin: 10px;">EVENTS</li>
+                <li style="display: inline-block;list-style-type: disc; margin: 10px;">PRODUCTS</li>
+            </ul>
+        </div>
+    </header>
+    <nav style=" width: 100%; text-align: justify">
+        <h1>
+            Registration
+        </h1>
+        <form method="POST" action="singUp.php">
+            <p>
+                <label for="FullName"><b>Full name:</b></label><br>
+                <input type="text" name="FullName" placeholder="First Last" required>
+            </p>
+            <p>
+                <label for="email"><b>Email Adress:</b></label><br>
+                <input type="email" name="email" placeholder="exapmle@gmail.com" required>
+            </p>
+            <p>
+                <label for="Password"><b>Password:</b></label><br>
+                <input type="password" name="Password" required>
+            </p>
+            <p>
+                <label for="Confirm_Password"><b>Confirm Password: </b></label><br>
+                <input type="password" name="Confirm_Password" required>
+            </p>
+
+            <p>
+                <label for="Tel"><b>Tel:</b></label><br>
+                <select style="width: 50px">
+                    <option>966</option>
+                    <option>977</option>
+                    <option>1</option>
+                    <option>983</option>
+                </select>
+                <input type="tel" name="Tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+            </p>
+            <div>
+                <label for="FavCity"><b>Favorite cities:</b></label><br>
+                <input type="checkbox" id="city1" name="city1" value="Ryadh">
+                <label for="city1"> Riyadh</label><br>
+                <input type="checkbox" id="city2" name="city2" value="Eastern province">
+                <label for="city2"> Eastern province</label><br>
+                <input type="checkbox" id="city3" name="city3" value="Makkah">
+                <label for="city3"> Makkah</label><br>
+                <input type="checkbox" id="city4" name="city4" value="Madinah">
+                <label for="city4">Madinah</label><br>
+                <input type="checkbox" id="city5" name="city5" value="Qasim">
+                <label for="city5">Qasim</label><br>
+                <input type="checkbox" id="city6" name="city6" value="Tabuk">
+                <label for="city6">Tabuk</label><br>
+                <input type="checkbox" id="city7" name="city7" value="Asir">
+                <label for="city7">Asir</label><br>
+                <input type="checkbox" id="city8" name="city8" value="Hail">
+                <label for="city8">Hail</label><br><br>
+            </div>
+
+            <input type="submit" value="Sing up">
+
+
+
+
+        </form>
+
+    </nav>
+
+    <footer style="text-align: center;">
+        <h4>Made by Mohammed</h4>
+        <h4>ID:201663020</h4>
+        <h4><a href="index.html">Home page</a>
+        </h4>
+    </footer>
+</body>
+
+
+</html>
